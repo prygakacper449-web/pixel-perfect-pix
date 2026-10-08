@@ -6,7 +6,7 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-const isStatic = process.env.STATIC_EXPORT === "true";
+const isStatic = process.env["STATIC_EXPORT"] === "true";
 
 export default defineConfig({
   tanstackStart: {

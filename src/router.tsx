@@ -3,7 +3,7 @@ import { createHashHistory, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 // Static export: hash history so the page works from any folder/FTP path.
-const useHash = import.meta.env.VITE_STATIC_EXPORT === "true" && typeof window !== "undefined";
+const useHash = import.meta.env["VITE_STATIC_EXPORT"] === "true" && typeof window !== "undefined";
 
 export const getRouter = () => {
   const queryClient = new QueryClient();
