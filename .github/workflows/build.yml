@@ -1,4 +1,4 @@
-ame: Build Automatically
+name: Build Automatically
 
 on:
   push:
